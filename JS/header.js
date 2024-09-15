@@ -1,8 +1,8 @@
-const taskbarIcon = document.getElementById('taskbar-icon');
-const navLinks = document.getElementById('navLinks');
+const navbarIcon = document.getElementById('navbar-icon');
+const navLinks = document.getElementById('nav-links');
 const loginLink = document.getElementById('login-link');
 
-taskbarIcon.addEventListener('click', () => {
+navbarIcon.addEventListener('click', () => {
     navLinks.classList.toggle('active');
 });
 
@@ -16,7 +16,6 @@ loginLink.addEventListener('click', () => {
         updateLoginButton();
     }
 });
-
 function updateLoginButton() {
     if (sessionStorage.getItem('loggedIn')) {
         loginLink.textContent = 'Logout';
