@@ -9,7 +9,9 @@ body {
 }
 
 .navbar {
+    width: 100%;
     position: sticky;
+    margin-bottom: 40px;
     top: 0px;
     left: 0px;
     z-index: 2;
@@ -65,6 +67,18 @@ body {
     border-radius: 5px;
 }
 
+a[href="#home"] {
+    scroll-behavior: smooth;
+}
+
+a[href="#courses"] {
+    scroll-behavior: smooth;
+}
+
+a[href="#ebooks"] {
+    scroll-behavior: smooth;
+}
+
 @media screen and (max-width: 768px) {
     .nav-links {
         position: absolute;
@@ -79,6 +93,7 @@ body {
         display: none;
         padding: 5%;
         box-shadow: 2px 0 5px rgba(0, 0, 0, 0.3);
+        border-radius: 5%;
     }
 
     .nav-links.active {

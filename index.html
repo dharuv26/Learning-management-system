@@ -6,14 +6,13 @@
     <meta name="viewport"
         content="width=device-width, initial-scale=1.0, minimum-scale=0.75, maximum-scale=2.0, user-scalable=1" />
     <title>Learning Management System</title>
-    <!-- <link rel="stylesheet" href="./CSS/style.css" /> -->
     <link rel="stylesheet" href="./CSS/header.css" />
-    <link rel="stylesheet" href="./CSS/slider.css" />
+    <link rel="stylesheet" href="./CSS/style.css" />
 </head>
 
 <body>
-    <script src="./JS/slider.js" async></script>
     <script src="./JS/header.js" async></script>
+    <script src="./JS/script.js" defer></script>
 
     <!-- Navbar -->
     <nav class="navbar">
@@ -24,7 +23,7 @@
             <li><a href="#home">Home</a></li>
             <li><a href="#courses">Courses</a></li>
             <li><a href="#questions">Question Tracker</a></li>
-            <li><a href="#e-books">e-Books</a></li>
+            <li><a href="#ebooks">e-Books</a></li>
             <li><a href="#login" id="login-link">Login/Sign Up</a></li>
         </ul>
 
@@ -36,73 +35,88 @@
         </div>
     </nav>
 
-
-    <!-- Home Section -->
-    <br>
+    <!-- Home Carousel Section -->
     <hr>
     <h2 id="section-heading" class="section-heading">Home</h2>
     <hr>
-    <p>Welcome to the Learning Management System (LMS), your hub for learning and growth.</p>
-    <main id="slider" class="slider">
-        <button id="slider-prev" class="slider-button">&lt;</button>
-        <img src="https://picsum.photos/id/236/1000/500" class="slide">
-        <img src="https://picsum.photos/id/237/1000/500" class="slide">
-        <img src="https://picsum.photos/id/238/1000/500" class="slide">
-        <img src="https://picsum.photos/id/239/1000/500" class="slide">
-        <img src="https://picsum.photos/id/240/1000/500" class="slide">
-        <button id="slider-next" class="slider-button">&gt;</button>
+    <main id="home" class="wrapper first-carousel">
+        <button id="left" class="left">&lt;</button>
+        <ul class="carousel">
+            <li class="card">
+                <div class="img"><img src="https://picsum.photos/id/250/1000/500" alt="" draggable="false"></div>
+                <h2>Slide 1 Heading</h2>
+                <p>Slide 1 Description</p>
+            </li>
+            <li class="card">
+                <div class="img"><img src="https://picsum.photos/id/251/1000/500" alt="" draggable="false"></div>
+                <h2>Slide 2 Heading</h2>
+                <p>Slide 2 Description</p>
+            </li>
+            <li class="card">
+                <div class="img"><img src="https://picsum.photos/id/252/1000/500" alt="" draggable="false"></div>
+                <h2>Slide 3 Heading</h2>
+                <p>Slide 3 Description</p>
+            </li>
+        </ul>
+        <button id="right" class="right">&gt;</button>
     </main>
 
-    <!-- Courses Section -->
+    <!-- Courses Carousel Section -->
     <hr>
     <h2 id="section-heading" class="section-heading">Courses</h2>
     <hr>
-    <section id="courses" class="courses">
-
-        <div class="course-box">
-            <img src="https://picsum.photos/id/241/300/150" alt="Course 1">
-            <h3>Course 1</h3>
-            <p>Introduction to Programming</p>
-            <p class="price">₹XXX.XX</p>
-            <button>Add to Cart</button>
-        </div>
-        <div class="course-box">
-            <img src="https://picsum.photos/id/242/300/150" alt="Course 2">
-            <h3>Course 2</h3>
-            <p>Data Science Essentials</p>
-            <p class="price">₹XXX.XX</p>
-            <button>Add to Cart</button>
-        </div>
-        <div class="course-box">
-            <img src="https://picsum.photos/id/243/300/150" alt="Course 3">
-            <h3>Course 3</h3>
-            <p>Web Development Bootcamp</p>
-            <p class="price">₹XXX.XX</p>
-            <button>Add to Cart</button>
-        </div>
+    <section id="courses" class="wrapper second-carousel">
+        <button id="left">&lt;</button>
+        <ul class="carousel">
+            <li class="card">
+                <div class="img"><img src="https://picsum.photos/id/241/300/150" alt="" draggable="false"></div>
+                <h3>Course 1</h3>
+                <p>Introduction to Programming</p>
+                <p class="price">₹XXX.XX</p>
+                <button>Add to Cart</button>
+            </li>
+            <li class="card">
+                <div class="img"><img src="https://picsum.photos/id/242/300/150" alt="" draggable="false"></div>
+                <h3>Course 2</h3>
+                <p>Data Science Essentials</p>
+                <p class="price">₹XXX.XX</p>
+                <button>Add to Cart</button>
+            </li>
+            <li class="card">
+                <div class="img"><img src="https://picsum.photos/id/243/300/150" alt="" draggable="false"></div>
+                <h3>Course 3</h3>
+                <p>Web Development Bootcamp</p>
+                <p class="price">₹XXX.XX</p>
+                <button>Add to Cart</button>
+            </li>
+        </ul>
+        <button id="right">&gt;</button>
     </section>
 
-    <!-- E-books Section -->
+    <!-- E-books Carousel Section -->
     <hr>
     <h2 id="section-heading" class="section-heading">E-books</h2>
     <hr>
-    <section id="ebooks" class="ebooks">
-
-        <div class="ebook-box">
-            <img src="https://picsum.photos/id/244/300/200" alt="Book 1">
-            <h3>Book 1</h3>
-            <p>by Author 1</p>
-        </div>
-        <div class="ebook-box">
-            <img src="https://picsum.photos/id/201/300/200" alt="Book 2">
-            <h3>Book 2</h3>
-            <p>by Author 2</p>
-        </div>
-        <div class="ebook-box">
-            <img src="https://picsum.photos/id/200/300/200" alt="Book 3">
-            <h3>Book 3</h3>
-            <p>by Author 3</p>
-        </div>
+    <section id="ebooks" class="wrapper third-carousel">
+        <button id="left">&lt;</button>
+        <ul class="carousel">
+            <li class="card">
+                <div class="img"><img src="https://picsum.photos/id/249/300/150" alt="" draggable="false"></div>
+                <h3>Book 1</h3>
+                <p>by Author 1</p>
+            </li>
+            <li class="card">
+                <div class="img"><img src="https://picsum.photos/id/250/300/150" alt="" draggable="false"></div>
+                <h3>Book 2</h3>
+                <p>by Author 2</p>
+            </li>
+            <li class="card">
+                <div class="img"><img src="https://picsum.photos/id/251/300/150" alt="" draggable="false"></div>
+                <h3>Book 3</h3>
+                <p>by Author 3</p>
+            </li>
+        </ul>
+        <button id="right">&gt;</button>
     </section>
 
     <!-- Footer -->
@@ -110,9 +124,8 @@
         <p>Learning Management System</p>
         <a href="#home">Home</a> |
         <a href="#courses">Courses</a> |
-        <a href="#ebooks">E-books</a> 
+        <a href="#ebooks">E-books</a>
     </footer>
-
 </body>
 
 </html>

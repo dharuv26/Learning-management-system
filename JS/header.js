@@ -16,6 +16,7 @@ loginLink.addEventListener('click', () => {
         updateLoginButton();
     }
 });
+
 function updateLoginButton() {
     if (sessionStorage.getItem('loggedIn')) {
         loginLink.textContent = 'Logout';
