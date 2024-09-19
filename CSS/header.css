@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: Arial, sans-serif;
 }
@@ -44,6 +48,7 @@ body {
     color: white;
     text-decoration: none;
     font-size: 1.1rem;
+    cursor: pointer;
 }
 
 .nav-links a:hover {
@@ -65,18 +70,6 @@ body {
     width: 100%;
     background-color: white;
     border-radius: 5px;
-}
-
-a[href="#home"] {
-    scroll-behavior: smooth;
-}
-
-a[href="#courses"] {
-    scroll-behavior: smooth;
-}
-
-a[href="#ebooks"] {
-    scroll-behavior: smooth;
 }
 
 @media screen and (max-width: 768px) {
