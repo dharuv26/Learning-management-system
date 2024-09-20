@@ -38,6 +38,7 @@ hr {
 
 .first-carousel .card {
     max-width: 100%;
+    height: 100%;
 }
 
 .wrapper.first-carousel {
@@ -129,30 +130,92 @@ hr {
     color: white;
 }
 
-.card .img {
-    background: #031A9A;
-    width: 148px;
-    height: 148px;
-    border-radius: 50%;
+/* First Carousel (Home) */
+.wrapper.first-carousel {
+    height: 50%;
+    width: 100%;
+    max-height: 900px;
 }
 
-.card .img img {
-    width: 140px;
-    height: 140px;
+.first-carousel .card {
+    height: 100%;
+    width: 100%;
+}
+.first-carousel .card .img {
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+}
+
+.first-carousel .card .img img {
+    width: 100%;
+    height: 100%;
     object-fit: cover;
-    border-radius: 50%;
-    border: 4px solid #fff;
+    border-radius: 8px;
 }
 
-.card h2 {
+.first-carousel .card h2 {
     font-weight: 500;
     font-size: 1.56rem;
-    margin: 30px 0 5px;
+    margin: 10px 0;
 }
 
-.card p {
+.first-carousel .card p {
     color: #ddd;
     font-size: 1.31rem;
+}
+
+/* Second Carousel (Courses) */
+
+.second-carousel .card .img {
+    width: 300px;
+    height: 150px;
+    border-radius: 12px;
+    margin-bottom: 15px; /* Added space between image and heading */
+}
+
+.second-carousel .card .img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.second-carousel .card h3 {
+    font-weight: 500;
+    font-size: 1.5rem;
+    margin: 15px 0 5px;
+}
+
+.second-carousel .card p {
+    color: #ddd;
+    font-size: 1.25rem;
+}
+
+/* Third Carousel (E-books) */
+.third-carousel .card .img {
+    width: 150px;
+    height: 200px;
+    border-radius: 6px;
+    margin-bottom: 15px; /* Added space between image and heading */
+}
+
+.third-carousel .card .img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+.third-carousel .card h3 {
+    font-weight: 500;
+    font-size: 1.25rem;
+    margin: 15px 0 5px;
+}
+
+.third-carousel .card p {
+    color: #ddd;
+    font-size: 1.1rem;
 }
 
 footer {
@@ -187,7 +250,7 @@ footer a:hover {
     }
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1161px) {
     .wrapper {
         width: 90%;
     }
@@ -205,7 +268,7 @@ footer a:hover {
     }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 765px) {
     .wrapper {
         width: 90%;
     }
