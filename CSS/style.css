@@ -16,7 +16,7 @@ body {
 
 h2.section-heading {
     text-align: center;
-    font-size: 2rem;
+    font-size: 2.5rem;
     margin: 20px 0;
     color: white;
 }
@@ -27,6 +27,27 @@ hr {
     background: white;
     width: 200px;
     margin: 0 auto 0 auto;
+}
+
+.section-content {
+    max-width: 1000px;
+    margin: 0 auto 40px;
+    padding: 20px;
+    text-align: center;
+}
+
+.section-content h3 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    font-style: italic;
+    line-height: 1.4;
+    color: aliceblue;
+}
+
+.section-content p {
+    font-size: 1.3rem;
+    color: antiquewhite;
+    line-height: 1.6;
 }
 
 .wrapper {
@@ -134,13 +155,14 @@ hr {
 .wrapper.first-carousel {
     height: 50%;
     width: 100%;
-    max-height: 900px;
+    max-width: 1200px;
 }
 
 .first-carousel .card {
     height: 100%;
     width: 100%;
 }
+
 .first-carousel .card .img {
     width: 100%;
     height: 100%;
@@ -171,7 +193,8 @@ hr {
     width: 300px;
     height: 150px;
     border-radius: 12px;
-    margin-bottom: 15px; /* Added space between image and heading */
+    margin-bottom: 15px;
+    /* Added space between image and heading */
 }
 
 .second-carousel .card .img img {
@@ -197,7 +220,8 @@ hr {
     width: 150px;
     height: 200px;
     border-radius: 6px;
-    margin-bottom: 15px; /* Added space between image and heading */
+    margin-bottom: 15px;
+    /* Added space between image and heading */
 }
 
 .third-carousel .card .img img {
@@ -218,23 +242,7 @@ hr {
     font-size: 1.1rem;
 }
 
-footer {
-    margin-top: 20px;
-    width: 100%;
-    background-color: #333;
-    color: white;
-    padding: 20px 10%;
-    text-align: center;
-}
 
-footer a {
-    color: white;
-    text-decoration: none;
-}
-
-footer a:hover {
-    text-decoration: underline;
-}
 
 @media screen and (max-width: 1200px) {
     .wrapper {
@@ -279,5 +287,24 @@ footer a:hover {
 
     .wrapper.first-carousel {
         width: 100%;
+    }
+
+    .section-content h3 {
+        font-size: 1.5rem;
+    }
+
+    .section-content p {
+        font-size: 1rem;
+    }
+}
+
+
+@media screen and (max-width: 480px) {
+    .section-content h3 {
+        font-size: 1.3rem;
+    }
+
+    .section-content p {
+        font-size: 0.9rem;
     }
 }

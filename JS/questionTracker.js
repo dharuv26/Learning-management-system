@@ -1,4 +1,11 @@
 // Constructor function for creating a question object
+
+const home = document.getElementById('home');
+
+home.addEventListener('click', () => {
+    window.location.href = '../index.html';
+});
+
 function Question(text, tags, status, difficulty) {
     this.text = text;
     this.tags = tags;
@@ -145,4 +152,4 @@ function removeQuestion(index) {
     });
 }
 
-loadQuestions();    
+loadQuestions();

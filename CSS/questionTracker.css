@@ -11,11 +11,10 @@ body {
     align-items: center;
     background: linear-gradient(to left top, #031A9A, #8B53FF);
     color: #333;
-    padding-bottom: 40px;
 }
 
 header {
-    background-color: #031A9A; 
+    background-color: #031A9A;
     color: white;
     padding: 20px;
     width: 100%;
@@ -23,7 +22,8 @@ header {
     margin-bottom: 20px;
 }
 
-h1, h2 {
+h1,
+h2 {
     text-align: center;
     padding: 20px;
     color: #fff;
@@ -51,7 +51,8 @@ form label {
     margin: 10px 0 5px;
 }
 
-form input, form select {
+form input,
+form select {
     padding: 10px;
     margin-bottom: 10px;
     width: 100%;
@@ -72,6 +73,27 @@ button:hover {
     background-color: #8B53FF;
 }
 
+.section-content {
+    max-width: 1000px;
+    margin: 0 auto 40px;
+    padding: 20px;
+    text-align: center;
+}
+
+.section-content h3 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    font-style: italic;
+    line-height: 1.4;
+    color: aliceblue;
+}
+
+.section-content p {
+    font-size: 1.3rem;
+    color: antiquewhite;
+    line-height: 1.6;
+}
+
 #question-table {
     margin: 20px 0;
     width: 100%;
@@ -79,7 +101,8 @@ button:hover {
     border-radius: 2%;
 }
 
-#question-table th, #question-table td {
+#question-table th,
+#question-table td {
     padding: 12px;
     border: 1px solid #ccc;
     text-align: center;
@@ -111,6 +134,7 @@ button:hover {
 
 
 @media (max-width: 900px) {
+
     form,
     #question-table {
         width: 100%;
@@ -128,7 +152,9 @@ button:hover {
         width: 90%;
     }
 
-    form input, form select, button {
+    form input,
+    form select,
+    button {
         font-size: 0.9rem;
     }
 
@@ -141,7 +167,8 @@ button:hover {
         font-size: 0.9rem;
     }
 
-    #question-table th, #question-table td {
+    #question-table th,
+    #question-table td {
         padding: 5px;
     }
 
