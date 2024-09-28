@@ -5,6 +5,7 @@ This project is a comprehensive Learning Management System built using HTML, CSS
 
 ## Table Of Contents
 - [Introduction](#introduction)
+- [Demo](#demo)
 - [Features](#features)
 - [Installation](#installation)
 - [Directory Structure](#directory-structure)
@@ -15,7 +16,13 @@ This project is a comprehensive Learning Management System built using HTML, CSS
 
 The Learning Management System (LMS) is a comprehensive web application designed to facilitate and enhance the online educational experience. Built using HTML, CSS, and JavaScript, this project aims to provide a user-friendly platform where learners can browse courses, access e-books, track their progress, and manage their study questions efficiently. The LMS also features a simple user authentication system, allowing users to sign up, log in, and maintain personalized data such as tracked questions. With a responsive design and interactive features like carousels, the platform ensures a smooth learning experience across devices.
 <br/>
-<br/>
+<br />
+
+## Demo
+
+You can access a live demo of the Learning Management System website [here](https://dharuv26.github.io/Learning-management-system/). Feel free to explore and use the platform.
+<br />
+<br />
 
 ## Features
 1. ***Home Page:***
